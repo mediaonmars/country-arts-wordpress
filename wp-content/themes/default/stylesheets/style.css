@@ -1,0 +1,632 @@
+/*
+Theme Name: CAWA
+Theme URI: http://www.mediaonmars.com.au
+Author: Media on Mars
+Description: A custom theme designed by Media on Mars for Country Arts WA.
+Version: 1.0 
+Author URI: http://www.mediaonmars.com.au
+*/
+
+/*-------------------------------------------------------------- */
+
+
+	html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+	del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, 
+	h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, big, cite, 
+	dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+		vertical-align: baseline;
+		font-family: inherit;
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 100%;
+		outline: 0;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+	/* remember to define focus styles! */
+	:focus {
+		outline: 0;
+		}
+	body {
+		line-height: 1;
+		color: black;
+		}
+	ul {
+		list-style: none;
+		}
+		
+		
+		
+	/* tables still need cellspacing="0" in the markup */
+	table {
+		border-collapse: separate;
+		border-spacing: 0;
+		}
+	caption, th, td {
+		font-weight: normal;
+		text-align: left;
+		}
+	/* remove possible quote marks (") from <q> & <blockquote> */
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: "";
+		}
+	blockquote, q {
+		quotes: "" "";
+		}
+
+
+/* Image Alignment in WordPress */
+		
+img.alignleft, div.alignleft
+{
+	float:left;
+	margin:0 0.5em 0.5em 0;
+}
+
+img.alignright, div.alignright
+{
+	float:right;
+	margin:0 0 0.5em 0.5em;
+}	
+
+img.aligncenter, div.aligncenter
+{
+	text-align:center;
+	margin:0 auto;
+}	
+
+.wp-caption {
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 12px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+	color: #999;
+}
+		
+/* Site Styling Begins Here. CSS reset above this line ******************/
+
+/* HTML ELEMENTS */
+body { background-color:#ffffff;}
+
+/* COMMON CLASSES */
+.break { clear:both; }
+
+/* HEADER */
+#header { height:655px; }
+
+.headerimg { 
+	background-position: center top; 
+	background-repeat: no-repeat; 
+	width:100%; 
+	height:655px; 
+	position:absolute; 
+}
+
+#header-page { 
+	height:303px;
+	background-image:url("/images/header-05.jpg");
+	background-position: center top; 
+	background-repeat: no-repeat; 
+	}
+
+/* NAVIGATION */
+#nav-outer { 
+	height:150px; 
+	position:relative; 
+	background-image:url("/images/top-band.png");
+	background-position: 0 20px;
+	background-repeat: repeat-x;
+}
+
+	
+#navigation { 
+	height:150px; 
+	width:980px; 
+	margin:0 auto; 
+	background-image:url("/images/logo.png"); 
+	background-position: 0 0; 
+	background-repeat:no-repeat; }
+	
+
+/* SEARCH */
+#search { 
+	float:right; 
+	width:205px;
+	height: 40px; 
+	background-image:url("/images/search-bg.png"); 
+	background-repeat:no-repeat;
+	margin-top: 20px; 
+	margin-right: 10px;
+}
+
+#searchtxt { 
+	width:155px;
+	font-size: 13px;
+	height: 20px;
+	color: #0e6169;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	background-color: transparent;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.searchbtn {
+	border: 0;
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	background-image:url("/images/mag-glass.png");
+	cursor: pointer;
+}
+
+
+#content { 
+	width:980px; 
+	margin:0 auto;
+	background-color: #fff;
+	background-image: url("/images/page-bg.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-height: 610px; 
+	padding: 0 10px 0 10px;
+}
+
+#home-left{
+	width: 490px;
+	height: 580px;
+	float: left;
+	margin-top: 30px;
+	}
+
+#home-right{
+	width: 490px;
+	height: 610px;
+	float: right;
+	}
+	
+#footer{
+	background-image:url("/images/footer.png");
+	height: 405px;
+	background-position: center top; 
+	background-repeat: no-repeat;
+	width:auto;
+	clear: both;
+	}
+	
+
+
+#footer-main{
+	height: 405px;
+	width:980px; 
+	padding: 0 10px 0 10px;
+	margin:0 auto;
+	}
+	
+#footer-main h3{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	color: #138a96;
+	margin-bottom: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	
+	}
+
+#footer-main p{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 120%;
+	margin-bottom: 20px;
+	}
+	
+#footer-main a{
+	font-size: 14px;
+	text-transform: uppercase;
+	color:#dbbe7a;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	
+	}
+	
+#footer-main a:hover{
+	font-size: 14px;
+	text-decoration: none;
+	color: #ef994a;
+	text-decoration: underline;
+	}
+	
+div#preload { display: none; }	
+	
+#poll{
+	width: 230px;
+	margin-right: 10px;
+	margin-top: 155px;
+	height: 250px;
+	float: left;
+	}
+	
+#news{
+	width: 230px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 140px;
+	height: 243px;
+	float: left;
+	background-image:url("/images/news-bg.png");
+	background-repeat: no-repeat;
+	background-position: 175px 0;
+	padding-top: 22px;
+	}
+	
+#social{
+	width: 230px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 90px;
+	height: 315px;
+	float: left;
+	}
+	
+#newsletter{
+	width: 230px;
+	margin-left: 10px;
+	margin-top: 120px;
+	height: 285px;
+	float: left;
+	}
+
+.member{
+	float: right;
+	margin-right: 15px;
+	}
+	
+.icons{
+	padding-right: 8px;
+	margin-bottom: 30px;
+	}
+	
+.icons-home{
+	margin-left: 70px;
+	}
+	
+#content p{ 
+	color: #003333;
+	font-size: 15px;
+	line-height: 130%;
+	margin-bottom: 20px;
+}
+
+#content ul{ 
+	color: #003333;
+	font-size: 15px;
+	line-height: 130%;
+	margin-bottom: 20px;
+	list-style: square;
+	padding-left: 18px;
+}
+
+#content ol{ 
+	color: #003333;
+	font-size: 15px;
+	line-height: 130%;
+	margin-bottom: 20px;
+	list-style: decimal;
+	padding-left: 24px;
+}
+
+#content h1{ 
+	color: #a44e79;
+	font-size: 30px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#content h2{ 
+	color: #9fb43a;
+	font-size: 24px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#content h3{ 
+	color: #22919d;
+	font-size: 22px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#content h4{ 
+	color: #e2714d;
+	font-size: 20px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#content h5{ 
+	color: #f09f55;
+	font-size: 18px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#content h6{ 
+	color: #b8babb;
+	font-size: 18px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+
+
+#content blockquote{ 
+	color: #003333;
+	font-size: 13px;
+	line-height: 130%;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	font-style: italic;
+}
+
+
+/* PAGE */
+
+#sidebar{
+	width: 230px;
+	float: left;
+	}
+
+#sidebar-right{
+	width: 230px;
+	float: left;
+	}
+	
+.sidebar-header{
+	width: 170px;
+	height: 30px;
+	padding: 30px 30px 0 30px;
+	background-image:url("/images/side-header.png");
+	}
+	
+.sidebar-footer{
+	width: 230px;
+	height: 60px;
+	clear: both;
+	background-image:url("/images/side-footer.png");
+	}
+	
+.sidebar-main{
+	width: 170px;
+	min-height: 178px;
+	clear: both;
+	background-image:url("/images/side-main.png");
+	padding:20px 30px 0 30px;
+	}
+	
+#breadcrumbs{
+	width: 980px;
+	min-height: 20px;
+	padding: 10px 0 10px 0;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	}
+	
+#breadcrumbs a{
+	text-decoration: none;
+	color: #999;
+	font-weight: normal;
+	}
+	
+#breadcrumbs a:hover{
+	text-decoration: none;
+	color: #b12e3b;
+	}
+	
+#sidebar h3, #sidebar-right h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #dd5226;
+	font-weight: bold;
+	text-align: center;
+	}
+	
+
+	
+#sidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+#sidebar ul li{
+	color: #138a96;
+	font-size: 15px;
+	line-height: 130%;
+	}
+	
+#sidebar ul li a{
+	color: #138a96;
+	text-decoration: none;
+	}
+	
+#sidebar ul li a:hover{
+	color: #a44e79;
+	text-decoration: none;
+	}
+	
+#page-content{
+	width: 480px;
+	margin: 0 20px 0 20px;
+	float: left;
+	}
+	
+.login { 
+	width:205px;
+	height: 40px; 
+	background-image:url("/images/search-bg.png"); 
+	background-repeat:no-repeat;
+	position: relative;
+	left: -15px;
+}
+
+.logintxt { 
+	width:180px;
+	font-size: 13px;
+	height: 20px;
+	color: #0e6169;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	background-color: transparent;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.loginbtn {
+	border: 0;
+	background-color: transparent;
+	width: 95px;
+	height: 27px;
+	background-image:url("/images/submit.png");
+	cursor: pointer;
+	float: right;
+	margin-top: 5px;
+}
+
+.spacer{
+	height: 20px;
+	width: 100%;
+	clear: both;
+	}
+
+#sidebar-right ul{
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	}
+	
+#sidebar-right ul li{
+	color: #003333;
+	font-size: 15px;
+	line-height: 130%;
+	}
+	
+#sidebar-right li{
+	list-style-image: url("/images/bullet.png");
+	}
+	
+#sidebar-right ul li a{
+	color: #003333;
+	text-decoration: none;
+	}
+	
+#sidebar-right ul li a:hover{
+	color: #a44e79;
+	text-decoration: none;
+}
+
+
+/* Menu */
+
+#menu { position: relative;
+		top: 80px;
+		text-align: right;
+		}
+#menu ul { list-style:none; }
+#menu ul li { 
+	display:inline;
+	text-transform: uppercase;
+	font-size:14px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#menu ul li a { color:white; text-decoration:none; 
+	border-bottom: 3px #ef994a solid;}
+
+#menu ul li a:hover { 
+	border-bottom: 3px #fff solid; }
+  
+#menu ul li ul li a {
+  background-color: #42a1ab;
+  padding: 0 5px 0 5px;
+	border: none;
+}
+
+#menu ul li ul li a:hover {
+	border: none;
+  background-color: #ef994a;
+}
+
+#menu {
+  line-height: 28px;
+  text-align: right; 
+}
+#menu ul li a {
+  line-height: 28px;
+}
+#menu ul li ul {
+  border: none;
+  text-align: left;
+  margin: 0 0 0 0;
+  padding: 8px 0 0 0 ;
+  width: 300px;
+  z-index: 100;
+}
+#menu ul li ul li {
+  margin: 0;
+  width: 100%;
+}
+#menu ul {
+  padding: 0;
+  clear: both;
+}
+#menu li {
+  display: inline;
+  position: relative;
+}
+#menu li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  /* IE FIX */
+  left: 0;
+}
+#menu li > ul {
+  top: 18px;
+  left: 0;
+}
+#menu li:hover ul a {
+  display: block;
+  width: 100%;
+}
+#menu li:hover ul a:hover {
+  color: #ffffff;
+}
+#menu li:hover ul {
+  display: block;
+}
