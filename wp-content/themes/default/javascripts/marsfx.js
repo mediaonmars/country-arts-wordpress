@@ -38,7 +38,6 @@
      */
     searchClear: function() {
       var search = $("input.mars-search-clear");
-    console.log(search)
       search.each(function() {
         var orig = search.val();
         function clear() {
