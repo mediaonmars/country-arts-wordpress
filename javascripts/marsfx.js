@@ -15,7 +15,8 @@
     
       }
     
-      // precache 
+      // precache
+      // FIXME: does this actually work without embedding into document?
       images.each(function() {
         var el = $(this);
         el.attr("data-orig-src", el.attr("src"));

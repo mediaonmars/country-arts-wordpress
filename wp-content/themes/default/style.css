@@ -97,6 +97,30 @@ img.aligncenter, div.aligncenter
 	margin: 0;
 	color: #999;
 }
+
+/* CSS rules */
+
+#home-right .tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  background-color: #9fb43a;
+  padding: 8px 8px 8px 8px;
+}
+
+#home-right .tooltip * {
+  color: black;
+
+}
+
+#home-right .tooltip h4 {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+            
 		
 /* Site Styling Begins Here. CSS reset above this line ******************/
 
