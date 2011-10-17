@@ -12,8 +12,8 @@ $(document).ready(function() {
         if (regionEvents) {
           var tip = ["<h4>What's on in the " + region + " region</h4>"];
           for(index in regionEvents) {
-            event = regionEvents[index];
-            tip.push("<p>" + event.title + "</p>");
+            var evt = regionEvents[index];
+            tip.push("<p>" + evt.title + "</p>");
           }
           tip.push("<p>Click on the region to see the events for that region</p>");
           var homeRight = $("#home-right");

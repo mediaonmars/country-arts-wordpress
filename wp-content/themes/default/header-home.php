@@ -11,6 +11,7 @@
     <script src='/javascripts/application.js' type='text/javascript'></script>
     <script src='/javascripts/script.js' type='text/javascript'></script>
     <script src='/javascripts/marsfx.js' type='text/javascript'></script>
+    <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
   </head>
   <body>
     <div id='header'>
