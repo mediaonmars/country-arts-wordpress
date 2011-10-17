@@ -11,8 +11,8 @@ $(document).ready(function() {
         var regionEvents = regionInfo.events;
         if (regionEvents) {
           var tip = ["<h4>What's on in the " + region + " region</h4>"];
-          for(index in regionEvents) {
-            var evt = regionEvents[index];
+          for(i=0; i<regionEvents.length; i++) {
+            evt = regionEvents[i];
             tip.push("<p>" + evt.title + "</p>");
           }
           tip.push("<p>Click on the region to see the events for that region</p>");

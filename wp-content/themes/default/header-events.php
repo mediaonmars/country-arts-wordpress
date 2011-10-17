@@ -6,6 +6,7 @@
     <link href='<?php bloginfo('stylesheet_url'); ?>' rel='stylesheet' type='text/css' />
     <script src='/javascripts/lib.js' type='text/javascript'></script>
     <script src='/javascripts/jquery-1.6.2.min.js' type='text/javascript'></script>
+    <script src='/javascripts/application.js' type='text/javascript'></script>
     <script src='/javascripts/script.js' type='text/javascript'></script>
     <script src='/javascripts/marsfx.js' type='text/javascript'></script>
     <?php wp_head(); ?>
