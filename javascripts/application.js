@@ -10,12 +10,16 @@ $(document).ready(function() {
         var regionInfo = RegionEvents[region];
         var regionEvents = regionInfo.events;
         if (regionEvents) {
-          var tip = ["<h4>What's on in the " + region + " region</h4>"];
+          var tip = ["<h4>What's on in the " + _(region).capitalize() + " Region</h4>"];
           for(i=0; i<regionEvents.length; i++) {
             evt = regionEvents[i];
             tip.push("<p>" + evt.title + "</p>");
           }
-          tip.push("<p>Click on the region to see the events for that region</p>");
+          if (regionEvents.length > 0) {
+            tip.push("<p>Click on the map for more info about the events in this region</p>");
+          } else {
+            tip.push("<p>There are no events for this region</p>");
+          }
           var homeRight = $("#home-right");
           var popup = container.eq(0).simpletip();
           popup.update(tip.join(""));

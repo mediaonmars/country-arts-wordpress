@@ -108,17 +108,16 @@ img.aligncenter, div.aligncenter
   display: none;
   background-color: #9fb43a;
   padding: 8px 8px 8px 8px;
+  color: white;
+  font-size: 12px;
 }
 
 #home-right .tooltip * {
-  color: black;
-
+  color: white;
 }
-
 #home-right .tooltip h4 {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
-  color: black;
 }
             
 		
