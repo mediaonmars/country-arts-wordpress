@@ -10,7 +10,11 @@ $(document).ready(function() {
         var regionInfo = RegionEvents[region];
         var regionEvents = regionInfo.events;
         if (regionEvents) {
-          var tip = ["<h4>What's on in the " + _(region).capitalize() + " Region</h4>"];
+          var tip = ["<h4>What's on in the " + 
+            _(region.replace("-", " ")).chain().words().
+                                        map(function(w) {return _(w).capitalize()}).value().join(" ") + 
+                      " Region</h4>"];
+                      
           for(i=0; i<regionEvents.length; i++) {
             evt = regionEvents[i];
             tip.push("<p>" + evt.title + "</p>");
