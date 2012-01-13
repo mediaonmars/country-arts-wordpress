@@ -107,6 +107,10 @@ img.aligncenter, div.aligncenter
   z-index: 3;
   display: none;
   background-color: #9fb43a;
+
+  /* background-color: #feefdf;
+  border: 3px solid #fe8502; */
+
   padding: 8px 8px 8px 8px;
   color: white;
   font-size: 12px;
